@@ -2,7 +2,7 @@
 A game for my students to practice high and low sounds/pitches on the browser
 
 
-Using Next.js, Tailwind CSS, HTML Canvas
+Using Next.js, Tailwind CSS, Phaser.js
 
 
 ## Why I decided to build this
