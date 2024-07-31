@@ -1,12 +1,16 @@
-# high-low-game
-A game for my students to practice high and low sounds/pitches on the browser
+## First Iteration
 
+Using Vanilla JS and HTML, I developed the first vision
+of the drag and down high/low game.
+Essentially, we want users to use their cursor to
+drop the square onto the answer choice box, which
+says either "High" or "Low".
 
-Using Next.js, Tailwind CSS, Phaser.js
+The "High" and "Low" markers refer to the concept of identifying higher/lower frequencies.
+Music teachers start teaching this concept to young (ages 3-6) students in a formal classroom.
 
+In the next iteration, my goal is to have a game in which a music track plays and the user 
+can identify the frequency. the tracks would automatically play from an external
+API/DB collection of music, and the user would be able to keep track of points.
 
-## Why I decided to build this
-My students love technology. There are so many different types of games and interactive activities that they are in sync with.
-I also have to administer a standardized test… as a music teacher.
-This is where the idea for this project came from - creating a tool for my students to be able to practice identifying high and low sounds through the 
-use of visual characters that they can control and play with, as simulated on the actual test that they will see at the end of the academic year.
+![](game_drop.gif)
