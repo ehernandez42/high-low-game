@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>high/low game</title>
+    <style>
+        .draggable {
+            width: 100px;
+            height: 100px;
+            background-color: dodgerblue;
+            margin: 10px;
+            cursor: grab;
+        }
+        .lowDropzone {
+            display: flex;
+            justify-content: space-between;
+            width: 120px;
+            height: 120px;
+            border: 2px dashed #000;
+            margin: 10px;
+        }
+        .highDropzone {
+            display: flex;
+            justify-content: space-between;
+            width: 120px;
+            height: 120px;
+            border: 2px dashed #000;
+            margin: 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Optional: centers items vertically */
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        .title {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1 class="title">High/Low Game</h1>
+<div id="drag1" class="draggable" draggable="true">Drag me</div>
+<div class="container">
+    <div>
+        <p>low</p>
+        <div id="lowDrop" class="lowDropzone" data-value="low"></div>
+    </div>
+    <div>
+        <p>high</p>
+        <div id="highDrop" class="highDropzone" data-value="high"></div>
+    </div>
+
+</div>
+<div class="audio-container" style="text-align: center; margin-top: 20px;">
+    <h2>Audio Track</h2>
+    <audio autoplay id="audio" controls data-value="high">
+        <source src="What%20Child%20Is%20This_.mp3s_.mp3" type="audio/mpeg">
+    </audio>
+</div>
+<div id="result" style="text-align: center; margin-top: 20px;"></div>
+<script src="script.js"></script>
+</body>
+</html>
